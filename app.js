@@ -3,6 +3,7 @@ const app = express()
 
 app.use (express.static('public'))
 app.use (express.static('iceland picture'))
+app.use(express.urlencoded({extended: true}))
 
 app.set("view engine", "ejs")
 
@@ -29,9 +30,11 @@ app.get("/pierre-lune", (req,res) => {res.render("pierreLune.ejs")})
 app.get("/nuit-etoilee", (req,res) => {res.render("nuitétoilé.ejs")})
 
 
+app.post("/t", (req,res) => {
+    res.send(req.body.name + " " + req.body.first_name + " " + req.body.adress + " " + req.body.zip + " " + req.body.city + " " + req.body.mail + " " + req.body.phone + " " + req.body.text)
+}
 
-
-
+)
 
 
 

@@ -15,56 +15,66 @@
 
     <main>
         <h3>Demande de contact</h3>
+        
+        <form action="/t" method="post">
         <div class="contact">
-
-            <div>
-                <label for="idNom">Nom
-                </label>
-                <input type="text" name="" id="idName" required>
-            </div>
-            <div>
-                <label for="idPrenom">Prénom
-                </label>
-                <input type="text" name="" id="idPrenom" required>
-            </div>
-
-            <div>
-                <label for="idAdresse">Adresse
-                </label>
-                <input type="text" name="" id="idAdresse" required>
-            </div>
-
-            <div>
-                <label for="idPostal">Code Postal
-                </label>
-                <input type="number" minlength="5" maxlength="5" name="" id="idPostal" required>
-            </div>
-
-            <div>
-                <label for="idVille">Ville
-                </label>
-                <input type="text" name="" id="idVille" required>
-            </div>
-
-            <div>
-                <label for="idMail">Votre adresse mail
-                </label>
-                <input type="email" name="" id="idMail" required>
-            </div>
-
-            <div>
-                <label for="idTel">Telephone
-                </label>
-                <input type="tel" minlength="10" maxlength="12" name="" id="">
-            </div>
-
-            <div>
-                <label for="idCommentaire">Information Complementaires
-                    <textarea name="" id="idCommentaire" cols="30" rows="10"></textarea>
-                </label>
-            </div>
-
-
+                
+                
+                <div>
+                    <label for="idName">Nom
+                    </label>
+                    <input type="text" name="name" id="idName" required>
+                </div>
+                <div>
+                    <label for="idPrenom">Prénom
+                    </label>
+                    <input type="text" name="first_name" id="idPrenom" required>
+                </div>
+                
+                <div>
+                    <label for="idAdresse">Adresse
+                    </label>
+                    <input type="text" name="adress" id="idAdresse" required>
+                </div>
+                
+                <div>
+                    <label for="idPostal">Code Postal
+                    </label>
+                    <input type="number" minlength="5" maxlength="5" name="zip" id="idPostal" required>
+                </div>
+                
+                <div>
+                    <label for="idVille">Ville
+                    </label>
+                    <input type="text" name="city" id="idVille" required>
+                </div>
+                
+                <div>
+                    <label for="idMail">Votre adresse mail
+                    </label>
+                    <input type="email" name="mail" id="idMail" required>
+                </div>
+                
+                <div>
+                    <label for="idTel">Telephone
+                    </label>
+                    <input type="tel" minlength="10" maxlength="12" name="phone" id="">
+                </div>
+                
+                <div>
+                    <label for="idCommentaire">Information Complementaires
+                        <textarea name="text" id="idCommentaire" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+                
+                <div>
+                    <label for="idSubmit">
+                        <input type="submit" name="submit" id="idSubmit">
+                    </label>
+                </div>
+                
+            </form>
+                
 
         </div>
         <div class="retourHaut">
